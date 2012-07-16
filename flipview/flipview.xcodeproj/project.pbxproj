@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F171F5A15B3AF320027E6A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F171F5915B3AF320027E6A2 /* UIKit.framework */; };
+		5F171F5C15B3AF320027E6A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F171F5B15B3AF320027E6A2 /* Foundation.framework */; };
+		5F171F5E15B3AF320027E6A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F171F5D15B3AF320027E6A2 /* CoreGraphics.framework */; };
+		5F171F6415B3AF320027E6A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F171F6215B3AF320027E6A2 /* InfoPlist.strings */; };
+		5F171F6615B3AF320027E6A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F6515B3AF320027E6A2 /* main.m */; };
+		5F171F6A15B3AF320027E6A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F6915B3AF320027E6A2 /* AppDelegate.m */; };
+		5F171F7715B3AF780027E6A2 /* MTDragFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F7215B3AF780027E6A2 /* MTDragFlipView.m */; };
+		5F171F7E15B3B3670027E6A2 /* bg_detail_panelshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F171F7D15B3B3670027E6A2 /* bg_detail_panelshadow.png */; };
+		5F171F8015B3B3E40027E6A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F171F7F15B3B3E40027E6A2 /* QuartzCore.framework */; };
+		5F171F8515B3B7130027E6A2 /* MTFlipAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F8415B3B7130027E6A2 /* MTFlipAnimationView.m */; };
+		5F171F8915B3B8B60027E6A2 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F8815B3B8B60027E6A2 /* DemoViewController.m */; };
+		5F171F8C15B3B8D30027E6A2 /* DemoShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F8B15B3B8D30027E6A2 /* DemoShowView.m */; };
+		5F171F8F15B3B8E70027E6A2 /* DemoAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F8E15B3B8E70027E6A2 /* DemoAnimationView.m */; };
+		5F171F9515B3F00E0027E6A2 /* bg_detail_panelshadow@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F171F9415B3F00E0027E6A2 /* bg_detail_panelshadow@2X.png */; };
+		5F171F9715B3F24A0027E6A2 /* DemoData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F171F9615B3F24A0027E6A2 /* DemoData.plist */; };
+		5F171F9A15B3F3C40027E6A2 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F9915B3F3C40027E6A2 /* DemoModel.m */; };
+		5F171F9D15B3F6780027E6A2 /* MTBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F9C15B3F6780027E6A2 /* MTBlockOperation.m */; };
+		5F171FAA15B40DD10027E6A2 /* DemoMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171FA915B40DD00027E6A2 /* DemoMenuViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F171F5515B3AF320027E6A2 /* flipview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flipview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F171F5915B3AF320027E6A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F171F5B15B3AF320027E6A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F171F5D15B3AF320027E6A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F171F6115B3AF320027E6A2 /* flipview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "flipview-Info.plist"; sourceTree = "<group>"; };
+		5F171F6315B3AF320027E6A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F171F6515B3AF320027E6A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F171F6715B3AF320027E6A2 /* flipview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flipview-Prefix.pch"; sourceTree = "<group>"; };
+		5F171F6815B3AF320027E6A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F171F6915B3AF320027E6A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F171F7115B3AF780027E6A2 /* MTDragFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDragFlipView.h; sourceTree = "<group>"; };
+		5F171F7215B3AF780027E6A2 /* MTDragFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDragFlipView.m; sourceTree = "<group>"; };
+		5F171F7A15B3AFD40027E6A2 /* MTFlipAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFlipAnimationView.h; sourceTree = "<group>"; };
+		5F171F7D15B3B3670027E6A2 /* bg_detail_panelshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_detail_panelshadow.png; sourceTree = "<group>"; };
+		5F171F7F15B3B3E40027E6A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5F171F8415B3B7130027E6A2 /* MTFlipAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFlipAnimationView.m; sourceTree = "<group>"; };
+		5F171F8715B3B8B60027E6A2 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		5F171F8815B3B8B60027E6A2 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		5F171F8A15B3B8D30027E6A2 /* DemoShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoShowView.h; sourceTree = "<group>"; };
+		5F171F8B15B3B8D30027E6A2 /* DemoShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoShowView.m; sourceTree = "<group>"; };
+		5F171F8D15B3B8E70027E6A2 /* DemoAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAnimationView.h; sourceTree = "<group>"; };
+		5F171F8E15B3B8E70027E6A2 /* DemoAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAnimationView.m; sourceTree = "<group>"; };
+		5F171F9415B3F00E0027E6A2 /* bg_detail_panelshadow@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_detail_panelshadow@2X.png"; sourceTree = "<group>"; };
+		5F171F9615B3F24A0027E6A2 /* DemoData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoData.plist; sourceTree = "<group>"; };
+		5F171F9815B3F3C40027E6A2 /* DemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		5F171F9915B3F3C40027E6A2 /* DemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+		5F171F9B15B3F6780027E6A2 /* MTBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBlockOperation.h; sourceTree = "<group>"; };
+		5F171F9C15B3F6780027E6A2 /* MTBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBlockOperation.m; sourceTree = "<group>"; };
+		5F171FA815B40DD00027E6A2 /* DemoMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMenuViewController.h; sourceTree = "<group>"; };
+		5F171FA915B40DD00027E6A2 /* DemoMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMenuViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F171F5215B3AF320027E6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F171F8015B3B3E40027E6A2 /* QuartzCore.framework in Frameworks */,
+				5F171F5A15B3AF320027E6A2 /* UIKit.framework in Frameworks */,
+				5F171F5C15B3AF320027E6A2 /* Foundation.framework in Frameworks */,
+				5F171F5E15B3AF320027E6A2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F171F4A15B3AF320027E6A2 = {
+			isa = PBXGroup;
+			children = (
+				5F171F5F15B3AF320027E6A2 /* flipview */,
+				5F171F5815B3AF320027E6A2 /* Frameworks */,
+				5F171F5615B3AF320027E6A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F171F5615B3AF320027E6A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F171F5515B3AF320027E6A2 /* flipview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F171F5815B3AF320027E6A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F171F7F15B3B3E40027E6A2 /* QuartzCore.framework */,
+				5F171F5915B3AF320027E6A2 /* UIKit.framework */,
+				5F171F5B15B3AF320027E6A2 /* Foundation.framework */,
+				5F171F5D15B3AF320027E6A2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F171F5F15B3AF320027E6A2 /* flipview */ = {
+			isa = PBXGroup;
+			children = (
+				5F171F6815B3AF320027E6A2 /* AppDelegate.h */,
+				5F171F6915B3AF320027E6A2 /* AppDelegate.m */,
+				5F171F7015B3AF780027E6A2 /* flipView */,
+				5F171F6015B3AF320027E6A2 /* Supporting Files */,
+				5F171F8615B3B8A20027E6A2 /* demo */,
+			);
+			path = flipview;
+			sourceTree = "<group>";
+		};
+		5F171F6015B3AF320027E6A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F171F6115B3AF320027E6A2 /* flipview-Info.plist */,
+				5F171F6215B3AF320027E6A2 /* InfoPlist.strings */,
+				5F171F6515B3AF320027E6A2 /* main.m */,
+				5F171F6715B3AF320027E6A2 /* flipview-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F171F7015B3AF780027E6A2 /* flipView */ = {
+			isa = PBXGroup;
+			children = (
+				5F171F9415B3F00E0027E6A2 /* bg_detail_panelshadow@2X.png */,
+				5F171F7D15B3B3670027E6A2 /* bg_detail_panelshadow.png */,
+				5F171F7A15B3AFD40027E6A2 /* MTFlipAnimationView.h */,
+				5F171F8415B3B7130027E6A2 /* MTFlipAnimationView.m */,
+				5F171F7115B3AF780027E6A2 /* MTDragFlipView.h */,
+				5F171F7215B3AF780027E6A2 /* MTDragFlipView.m */,
+				5F171F9B15B3F6780027E6A2 /* MTBlockOperation.h */,
+				5F171F9C15B3F6780027E6A2 /* MTBlockOperation.m */,
+			);
+			path = flipView;
+			sourceTree = "<group>";
+		};
+		5F171F8615B3B8A20027E6A2 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				5F171F8715B3B8B60027E6A2 /* DemoViewController.h */,
+				5F171F8815B3B8B60027E6A2 /* DemoViewController.m */,
+				5F171F8A15B3B8D30027E6A2 /* DemoShowView.h */,
+				5F171F8B15B3B8D30027E6A2 /* DemoShowView.m */,
+				5F171F8D15B3B8E70027E6A2 /* DemoAnimationView.h */,
+				5F171F8E15B3B8E70027E6A2 /* DemoAnimationView.m */,
+				5F171F9615B3F24A0027E6A2 /* DemoData.plist */,
+				5F171F9815B3F3C40027E6A2 /* DemoModel.h */,
+				5F171F9915B3F3C40027E6A2 /* DemoModel.m */,
+				5F171FA815B40DD00027E6A2 /* DemoMenuViewController.h */,
+				5F171FA915B40DD00027E6A2 /* DemoMenuViewController.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F171F5415B3AF320027E6A2 /* flipview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F171F6D15B3AF320027E6A2 /* Build configuration list for PBXNativeTarget "flipview" */;
+			buildPhases = (
+				5F171F5115B3AF320027E6A2 /* Sources */,
+				5F171F5215B3AF320027E6A2 /* Frameworks */,
+				5F171F5315B3AF320027E6A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flipview;
+			productName = flipview;
+			productReference = 5F171F5515B3AF320027E6A2 /* flipview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F171F4C15B3AF320027E6A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5F171F4F15B3AF320027E6A2 /* Build configuration list for PBXProject "flipview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F171F4A15B3AF320027E6A2;
+			productRefGroup = 5F171F5615B3AF320027E6A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F171F5415B3AF320027E6A2 /* flipview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F171F5315B3AF320027E6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F171F6415B3AF320027E6A2 /* InfoPlist.strings in Resources */,
+				5F171F7E15B3B3670027E6A2 /* bg_detail_panelshadow.png in Resources */,
+				5F171F9515B3F00E0027E6A2 /* bg_detail_panelshadow@2X.png in Resources */,
+				5F171F9715B3F24A0027E6A2 /* DemoData.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F171F5115B3AF320027E6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F171F6615B3AF320027E6A2 /* main.m in Sources */,
+				5F171F6A15B3AF320027E6A2 /* AppDelegate.m in Sources */,
+				5F171F7715B3AF780027E6A2 /* MTDragFlipView.m in Sources */,
+				5F171F8515B3B7130027E6A2 /* MTFlipAnimationView.m in Sources */,
+				5F171F8915B3B8B60027E6A2 /* DemoViewController.m in Sources */,
+				5F171F8C15B3B8D30027E6A2 /* DemoShowView.m in Sources */,
+				5F171F8F15B3B8E70027E6A2 /* DemoAnimationView.m in Sources */,
+				5F171F9A15B3F3C40027E6A2 /* DemoModel.m in Sources */,
+				5F171F9D15B3F6780027E6A2 /* MTBlockOperation.m in Sources */,
+				5F171FAA15B40DD10027E6A2 /* DemoMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F171F6215B3AF320027E6A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F171F6315B3AF320027E6A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F171F6B15B3AF320027E6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F171F6C15B3AF320027E6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F171F6E15B3AF320027E6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "flipview/flipview-Prefix.pch";
+				INFOPLIST_FILE = "flipview/flipview-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F171F6F15B3AF320027E6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "flipview/flipview-Prefix.pch";
+				INFOPLIST_FILE = "flipview/flipview-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F171F4F15B3AF320027E6A2 /* Build configuration list for PBXProject "flipview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F171F6B15B3AF320027E6A2 /* Debug */,
+				5F171F6C15B3AF320027E6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F171F6D15B3AF320027E6A2 /* Build configuration list for PBXNativeTarget "flipview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F171F6E15B3AF320027E6A2 /* Debug */,
+				5F171F6F15B3AF320027E6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F171F4C15B3AF320027E6A2 /* Project object */;
+}
