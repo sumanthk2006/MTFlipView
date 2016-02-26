@@ -101,7 +101,7 @@ int count;
         
         m_backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
         _blackColor = [UIColor clearColor];
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 10)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 10)];
         _scrollView.backgroundColor = [UIColor clearColor];
         _scrollView.delegate = self;
         _scrollView.showsHorizontalScrollIndicator = YES;
@@ -110,6 +110,7 @@ int count;
         _scrollView.contentSize = CGSizeMake(320, 20);
         _scrollView.contentOffset = CGPointMake(0, 10);
         _scrollView.backgroundColor = [UIColor whiteColor];
+        _scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self addSubview:_scrollView];
         self.backgroundColor = [UIColor clearColor];
         
@@ -127,13 +128,15 @@ int count;
         
         _unuseViews = [[NSMutableDictionary alloc] init];
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(320, 0, 15, 460)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(frame.size.width, 0, 15, frame.size.height)];
         imageView.image = [UIImage imageNamed:@"bg_detail_panelshadow"];
+        imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
         [_transationView addSubview:imageView];
         
-        imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-15, 0, 15, 460)];
+        imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-15, 0, 15, frame.size.height)];
         imageView.image = [UIImage imageNamed:@"bg_detail_panelshadow"];
         imageView.layer.transform = CATransform3DMakeScale(-1, 1, 1);
+        imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         [_transationView addSubview:imageView];
         
     }
@@ -1286,7 +1289,7 @@ static NSTimeInterval __start;
 
 - (BOOL)open
 {
-    return abs(_transationView.center.x - (self.bounds.size.width / 2)) > 2;
+    return fabsf(_transationView.center.x - (self.bounds.size.width / 2)) > 2;
 }
 
 @end

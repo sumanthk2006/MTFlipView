@@ -41,14 +41,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    CGRect bounds = self.view.bounds;
     
-    _flipView = [[MTDragFlipView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    _flipView = [[MTDragFlipView alloc] initWithFrame:bounds];
     _flipView.delegate = self;
     _flipView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:_flipView];
     
     
-    _showerView = [[DemoShowView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    _showerView = [[DemoShowView alloc] initWithFrame:bounds];
     [_flipView reloadData];
     _flipView.loadAll = YES;
     
@@ -93,7 +94,7 @@
     static NSString *indentify = @"demoView";
     DemoAnimationView *view = (DemoAnimationView*)[flipView viewByIndentify:indentify];
     if (!view) {
-        view = [[DemoAnimationView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+        view = [[DemoAnimationView alloc] initWithFrame:self.view.bounds];
         view.indentify = indentify;
     }
     view.text = [_model.data objectAtIndex:index];
