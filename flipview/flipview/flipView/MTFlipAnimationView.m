@@ -23,6 +23,7 @@ static NSOperationQueue *__queue;
     if (self) {
         _indentify = @"defaulte";
         _imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _imageSize = frame.size;
         self.userInteractionEnabled = NO;
         [self addSubview:_imageView];
     }
@@ -58,7 +59,7 @@ static NSOperationQueue *__queue;
     [operation setCompleteBlock:^(UIImage *image) {
         [self renderedImage:image];
     }];
-    operation.size = _imageView.bounds.size;
+    operation.size = _imageSize;
     [self.mainQueue addOperation:operation];
     _operation = operation;
 }

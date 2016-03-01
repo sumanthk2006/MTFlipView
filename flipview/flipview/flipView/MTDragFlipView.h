@@ -19,7 +19,11 @@ typedef enum {
     FZDragFlipStateLoading
 } FZDragFlipState;
 
-typedef NSComparisonResult(^MTFlipViewComparator)(MTFlipAnimationView *view1, MTFlipAnimationView *view2);
+@class MTDragFlipView;
+
+typedef NSComparisonResult(^MTFlipViewComparator)(MTDragFlipView *flipView,
+                                                  MTFlipAnimationView *view1,
+                                                  MTFlipAnimationView *view2);
 
 @protocol MTDragFlipViewDelegate;
 @class CAAnimationGroup;
@@ -68,6 +72,7 @@ typedef NSComparisonResult(^MTFlipViewComparator)(MTFlipAnimationView *view1, MT
 
 //到顶部
 - (void)backToTop:(BOOL)aniamted;
+- (void)scrollToPage:(NSInteger)page animated:(BOOL)animated;
 //
 - (void)openBackgroudView;
 - (void)closeBackView;
