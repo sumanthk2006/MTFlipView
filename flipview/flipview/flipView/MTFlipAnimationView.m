@@ -23,6 +23,7 @@ static NSOperationQueue *__queue;
     if (self) {
         _indentify = @"defaulte";
         _imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        self.userInteractionEnabled = NO;
         [self addSubview:_imageView];
     }
     return self;
@@ -36,7 +37,9 @@ static NSOperationQueue *__queue;
     _operation = nil;
 }
 
-- (void)setAnimationPercent:(CGFloat)percent{}
+- (void)setAnimationPercent:(CGFloat)percent{
+    _percent = percent;
+}
 
 - (NSOperationQueue*)mainQueue
 {

@@ -19,6 +19,8 @@ typedef enum {
     FZDragFlipStateLoading
 } FZDragFlipState;
 
+typedef NSComparisonResult(^MTFlipViewComparator)(MTFlipAnimationView *view1, MTFlipAnimationView *view2);
+
 @protocol MTDragFlipViewDelegate;
 @class CAAnimationGroup;
 
@@ -59,6 +61,7 @@ typedef enum {
 @property (nonatomic, assign)   BOOL        loadAll, dragEnable;
 @property (nonatomic, strong)   UIView      *animationView;
 @property (nonatomic, assign)   FZDragFlipState state;
+@property (nonatomic, copy)     MTFlipViewComparator    complarator;
 
 // is opened background view or not.
 @property (nonatomic, readonly) BOOL        open;
