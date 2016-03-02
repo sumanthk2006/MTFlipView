@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DD2C5F211A91FEE926D6307DF7C76DF98856BF83",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "42CBF00A388A5FECE79A1A4F4B7CA7B489E13081" : 0,
+    "DD2C5F211A91FEE926D6307DF7C76DF98856BF83" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "87215BA1-2B8E-4C81-95EF-52FBDC2956F9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "42CBF00A388A5FECE79A1A4F4B7CA7B489E13081" : "MTFlipView\/flipview\/GTween\/",
+    "DD2C5F211A91FEE926D6307DF7C76DF98856BF83" : "MTFlipView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "flipview",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "flipview\/flipview.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dbsGen\/GTween.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "42CBF00A388A5FECE79A1A4F4B7CA7B489E13081"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dbsGen\/MTFlipView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD2C5F211A91FEE926D6307DF7C76DF98856BF83"
+    }
+  ]
+}
