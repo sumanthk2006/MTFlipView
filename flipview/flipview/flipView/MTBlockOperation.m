@@ -55,4 +55,9 @@
     }
 }
 
+- (void)setSize:(CGSize)size {
+    _size.width = ceilf(size.width);
+    _size.height = ceilf(size.height);
+}
+
 @end
