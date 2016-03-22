@@ -33,13 +33,14 @@ static NSOperationQueue *__queue;
 
 - (void)clean{
     [_operation cancel];
-    _operation.completeBlock = nil;
-    _operation.block = nil;
     _operation = nil;
 }
 
 - (void)setAnimationPercent:(CGFloat)percent{
     _animationPercent = percent;
+}
+- (void)setBorderPercent:(CGFloat)percent {
+    self.animationPercent = percent;
 }
 
 - (NSOperationQueue*)mainQueue
