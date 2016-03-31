@@ -29,12 +29,12 @@ static UILabel  *__label;
         }
         _topShadow = [[UIImageView alloc] initWithImage:__image];
         _topShadow.layer.transform = CATransform3DMakeRotation(- M_PI / 2, 0, 0, 1);
-        _topShadow.frame = CGRectMake(0, -15, 320, 15);
+        _topShadow.frame = CGRectMake(0, -15, frame.size.width, 15);
         [self addSubview:_topShadow];
         
         _downShadow = [[UIImageView alloc] initWithImage:__image];
         _downShadow.layer.transform = CATransform3DMakeRotation(M_PI / 2, 0, 0, 1);
-        _downShadow.frame = CGRectMake(0, 460, 320, 15);
+        _downShadow.frame = CGRectMake(0, frame.size.height, frame.size.width, 15);
         [self addSubview:_downShadow];
         
         self.backgroundColor = [UIColor blueColor];

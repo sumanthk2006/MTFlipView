@@ -1,0 +1,3 @@
+[submodule "flipview/GTween"]
+	path = flipview/GTween
+	url = https://github.com/dbsGen/GTween.git

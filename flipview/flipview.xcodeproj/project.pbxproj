@@ -25,6 +25,11 @@
 		5F171F9A15B3F3C40027E6A2 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F9915B3F3C40027E6A2 /* DemoModel.m */; };
 		5F171F9D15B3F6780027E6A2 /* MTBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171F9C15B3F6780027E6A2 /* MTBlockOperation.m */; };
 		5F171FAA15B40DD10027E6A2 /* DemoMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F171FA915B40DD00027E6A2 /* DemoMenuViewController.m */; };
+		B2B16CC31C86ACA400A4E151 /* GCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B16CA11C86ACA400A4E151 /* GCallback.m */; };
+		B2B16CC41C86ACA400A4E151 /* GEase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B16CA31C86ACA400A4E151 /* GEase.m */; };
+		B2B16CC51C86ACA400A4E151 /* GTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B16CA51C86ACA400A4E151 /* GTween.m */; };
+		B2B16CC61C86ACA400A4E151 /* GTweenProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B16CA71C86ACA400A4E151 /* GTweenProperty.m */; };
+		B2B16CC71C86ACA400A4E151 /* GValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B16CA91C86ACA400A4E151 /* GValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,16 @@
 		5F171F9C15B3F6780027E6A2 /* MTBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBlockOperation.m; sourceTree = "<group>"; };
 		5F171FA815B40DD00027E6A2 /* DemoMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMenuViewController.h; sourceTree = "<group>"; };
 		5F171FA915B40DD00027E6A2 /* DemoMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMenuViewController.m; sourceTree = "<group>"; };
+		B2B16CA01C86ACA400A4E151 /* GCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCallback.h; sourceTree = "<group>"; };
+		B2B16CA11C86ACA400A4E151 /* GCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCallback.m; sourceTree = "<group>"; };
+		B2B16CA21C86ACA400A4E151 /* GEase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEase.h; sourceTree = "<group>"; };
+		B2B16CA31C86ACA400A4E151 /* GEase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEase.m; sourceTree = "<group>"; };
+		B2B16CA41C86ACA400A4E151 /* GTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTween.h; sourceTree = "<group>"; };
+		B2B16CA51C86ACA400A4E151 /* GTween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTween.m; sourceTree = "<group>"; };
+		B2B16CA61C86ACA400A4E151 /* GTweenProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTweenProperty.h; sourceTree = "<group>"; };
+		B2B16CA71C86ACA400A4E151 /* GTweenProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTweenProperty.m; sourceTree = "<group>"; };
+		B2B16CA81C86ACA400A4E151 /* GValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GValue.h; sourceTree = "<group>"; };
+		B2B16CA91C86ACA400A4E151 /* GValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GValue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,7 @@
 		5F171F4A15B3AF320027E6A2 = {
 			isa = PBXGroup;
 			children = (
+				B2B16C871C86ACA400A4E151 /* GTween */,
 				5F171F5F15B3AF320027E6A2 /* flipview */,
 				5F171F5815B3AF320027E6A2 /* Frameworks */,
 				5F171F5615B3AF320027E6A2 /* Products */,
@@ -159,6 +175,39 @@
 			path = demo;
 			sourceTree = "<group>";
 		};
+		B2B16C871C86ACA400A4E151 /* GTween */ = {
+			isa = PBXGroup;
+			children = (
+				B2B16C891C86ACA400A4E151 /* GTween */,
+			);
+			path = GTween;
+			sourceTree = "<group>";
+		};
+		B2B16C891C86ACA400A4E151 /* GTween */ = {
+			isa = PBXGroup;
+			children = (
+				B2B16C9F1C86ACA400A4E151 /* Tween */,
+			);
+			path = GTween;
+			sourceTree = "<group>";
+		};
+		B2B16C9F1C86ACA400A4E151 /* Tween */ = {
+			isa = PBXGroup;
+			children = (
+				B2B16CA01C86ACA400A4E151 /* GCallback.h */,
+				B2B16CA11C86ACA400A4E151 /* GCallback.m */,
+				B2B16CA21C86ACA400A4E151 /* GEase.h */,
+				B2B16CA31C86ACA400A4E151 /* GEase.m */,
+				B2B16CA41C86ACA400A4E151 /* GTween.h */,
+				B2B16CA51C86ACA400A4E151 /* GTween.m */,
+				B2B16CA61C86ACA400A4E151 /* GTweenProperty.h */,
+				B2B16CA71C86ACA400A4E151 /* GTweenProperty.m */,
+				B2B16CA81C86ACA400A4E151 /* GValue.h */,
+				B2B16CA91C86ACA400A4E151 /* GValue.m */,
+			);
+			path = Tween;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,12 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B16CC61C86ACA400A4E151 /* GTweenProperty.m in Sources */,
 				5F171F6615B3AF320027E6A2 /* main.m in Sources */,
 				5F171F6A15B3AF320027E6A2 /* AppDelegate.m in Sources */,
 				5F171F7715B3AF780027E6A2 /* MTDragFlipView.m in Sources */,
 				5F171F8515B3B7130027E6A2 /* MTFlipAnimationView.m in Sources */,
+				B2B16CC71C86ACA400A4E151 /* GValue.m in Sources */,
 				5F171F8915B3B8B60027E6A2 /* DemoViewController.m in Sources */,
+				B2B16CC31C86ACA400A4E151 /* GCallback.m in Sources */,
+				B2B16CC41C86ACA400A4E151 /* GEase.m in Sources */,
 				5F171F8C15B3B8D30027E6A2 /* DemoShowView.m in Sources */,
+				B2B16CC51C86ACA400A4E151 /* GTween.m in Sources */,
 				5F171F8F15B3B8E70027E6A2 /* DemoAnimationView.m in Sources */,
 				5F171F9A15B3F3C40027E6A2 /* DemoModel.m in Sources */,
 				5F171F9D15B3F6780027E6A2 /* MTBlockOperation.m in Sources */,
@@ -298,11 +352,13 @@
 		5F171F6E15B3AF320027E6A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flipview/flipview-Prefix.pch";
 				INFOPLIST_FILE = "flipview/flipview-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -310,11 +366,13 @@
 		5F171F6F15B3AF320027E6A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flipview/flipview-Prefix.pch";
 				INFOPLIST_FILE = "flipview/flipview-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -338,6 +396,7 @@
 				5F171F6F15B3AF320027E6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

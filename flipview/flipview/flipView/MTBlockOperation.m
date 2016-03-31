@@ -34,18 +34,18 @@
     if (_block) {
         _block(context);
     }
-    CGImageRef image = CGBitmapContextCreateImage(context);
-    CGContextRelease(context);
-    CGColorSpaceRelease(colorSpace);
     if ([self isCancelled]) {
         CGContextRelease(context);
         CGColorSpaceRelease(colorSpace);
         return;
     }
+    CGImageRef image = CGBitmapContextCreateImage(context);
     [self performSelectorOnMainThread:@selector(performMain:)
                            withObject:[UIImage imageWithCGImage:image]
                         waitUntilDone:YES];
     CGImageRelease(image);
+    CGContextRelease(context);
+    CGColorSpaceRelease(colorSpace);
 }
 
 - (void)performMain:(UIImage*)image
@@ -53,6 +53,11 @@
     if (_completeBlock) {
         _completeBlock(image);
     }
+}
+
+- (void)setSize:(CGSize)size {
+    _size.width = ceilf(size.width);
+    _size.height = ceilf(size.height);
 }
 
 @end

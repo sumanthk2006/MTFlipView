@@ -19,6 +19,12 @@ typedef enum {
     FZDragFlipStateLoading
 } FZDragFlipState;
 
+@class MTDragFlipView;
+
+typedef NSComparisonResult(^MTFlipViewComparator)(MTDragFlipView *flipView,
+                                                  MTFlipAnimationView *view1,
+                                                  MTFlipAnimationView *view2);
+
 @protocol MTDragFlipViewDelegate;
 @class CAAnimationGroup;
 
@@ -27,6 +33,7 @@ typedef enum {
     int             _state;         //0any ,1updown,2leftright
     UIView          *_backContentView;
     UIView          *_leftView;
+    UIView          *_subview;
     UIImageView     *_backgroundView;    //背景层
     UIView          *_transationView;
     NSMutableArray  *_cachedImageViews;
@@ -59,12 +66,14 @@ typedef enum {
 @property (nonatomic, assign)   BOOL        loadAll, dragEnable;
 @property (nonatomic, strong)   UIView      *animationView;
 @property (nonatomic, assign)   FZDragFlipState state;
+@property (nonatomic, copy)     MTFlipViewComparator    complarator;
 
 // is opened background view or not.
 @property (nonatomic, readonly) BOOL        open;
 
 //到顶部
 - (void)backToTop:(BOOL)aniamted;
+- (void)scrollToPage:(NSInteger)page animated:(BOOL)animated;
 //
 - (void)openBackgroudView;
 - (void)closeBackView;
@@ -75,8 +84,9 @@ typedef enum {
 //缓存的UIImageView
 - (MTFlipAnimationView*)imageViewWithIndex:(NSInteger)index;
 - (MTFlipAnimationView*)viewByIndentify:(NSString*)indentify;
+- (MTFlipAnimationView*)viewByIndentify:(NSString*)indentify atIndex:(NSInteger)index;
 //把页面缓存的imageView
-- (void)viewToImage:(UIView*)view atIndex:(NSInteger)index;
+//- (void)viewToImage:(UIView*)view atIndex:(NSInteger)index;
 
 //重载所有页面
 - (void)reloadData;
@@ -89,8 +99,6 @@ typedef enum {
 - (void)load:(NSInteger)page;
 //if use this methord you must implementation - (MTFlipAnimationView*)flipViewPrePushDragingView:(FZDragFlipView *)flipView
 - (void)preload:(NSInteger)count;
-
-- (void)nextPage:(BOOL)animation;
 
 @end
 
